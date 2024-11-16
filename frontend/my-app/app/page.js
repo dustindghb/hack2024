@@ -1,9 +1,18 @@
-import Image from "next/image";
+'use client'
+
+import AudioRecorderButton from './components/recorderButton';
+import Box from '@mui/material/Box';
 
 export default function Home() {
   return (
-    <div>
-        <h1>hello world</h1>
-    </div>
+    <Box sx={{ 
+      display: 'flex', 
+      justifyContent: 'center', 
+      alignItems: 'center', 
+      minHeight: '100vh',
+      p: 3
+    }}>
+      <AudioRecorderButton />
+    </Box>
   );
 }
